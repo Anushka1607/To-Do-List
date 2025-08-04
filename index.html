@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>✨ Fun To-Do List ✨</h1>
+        
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addBtn">Add Task</button>
+        </div>
+        
+        <div class="filter-buttons">
+            <button id="allBtn" class="filter-btn active">All</button>
+            <button id="activeBtn" class="filter-btn">Active</button>
+            <button id="completedBtn" class="filter-btn">Completed</button>
+        </div>
+        
+        <ul id="taskList">
+            <!-- Tasks will be added here -->
+        </ul>
+        
+        <div class="stats">
+            <span id="taskCount">0 tasks</span> | 
+            <span id="completedCount">0 completed</span>
+        </div>
+        
+        <div class="clear-buttons">
+            <button id="clearCompletedBtn" class="clear-btn">Clear Completed</button>
+            <button id="clearAll" class="clear-btn">Clear All</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
